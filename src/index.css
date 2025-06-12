@@ -7,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 246 243 239;
+    --background: 255 255 255;
     --foreground: 38 50 66;
 
     --card: 255 255 255;
@@ -16,7 +16,7 @@
     --popover: 255 255 255;
     --popover-foreground: 38 50 66;
 
-    --primary: 241 141 121;
+    --primary: 38 50 66;
     --primary-foreground: 255 255 255;
 
     --secondary: 241 245 249;
@@ -25,7 +25,7 @@
     --muted: 248 250 252;
     --muted-foreground: 100 116 139;
 
-    --accent: 241 141 121;
+    --accent: 38 50 66;
     --accent-foreground: 255 255 255;
 
     --destructive: 239 68 68;
@@ -33,11 +33,11 @@
 
     --border: 226 232 240;
     --input: 226 232 240;
-    --ring: 241 141 121;
+    --ring: 38 50 66;
 
     --radius: 0.75rem;
 
-    --warmth: 241 141 121;
+    --warmth: 38 50 66;
     --warmth-foreground: 255 255 255;
     
     --nordic-blue: 38 50 66;
@@ -46,15 +46,15 @@
 
   .dark {
     --background: 38 50 66;
-    --foreground: 246 243 239;
+    --foreground: 255 255 255;
 
     --card: 30 41 59;
-    --card-foreground: 246 243 239;
+    --card-foreground: 255 255 255;
 
     --popover: 30 41 59;
-    --popover-foreground: 246 243 239;
+    --popover-foreground: 255 255 255;
 
-    --primary: 241 141 121;
+    --primary: 255 255 255;
     --primary-foreground: 38 50 66;
 
     --secondary: 51 65 85;
@@ -63,7 +63,7 @@
     --muted: 51 65 85;
     --muted-foreground: 148 163 184;
 
-    --accent: 241 141 121;
+    --accent: 255 255 255;
     --accent-foreground: 38 50 66;
 
     --destructive: 220 38 38;
@@ -71,12 +71,12 @@
 
     --border: 51 65 85;
     --input: 51 65 85;
-    --ring: 241 141 121;
+    --ring: 255 255 255;
 
-    --warmth: 241 141 121;
-    --warmth-foreground: 255 255 255;
+    --warmth: 255 255 255;
+    --warmth-foreground: 38 50 66;
     
-    --nordic-blue: 241 141 121;
+    --nordic-blue: 255 255 255;
     --nordic-light: 30 41 59;
   }
 }
