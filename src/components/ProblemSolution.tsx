@@ -1,40 +1,30 @@
 
-import { AlertCircle, CheckCircle, Shield, Users, Heart } from "lucide-react";
+import { AlertCircle, CheckCircle } from "lucide-react";
 
 const ProblemSolution = () => {
   const problems = [
     {
       icon: AlertCircle,
-      title: "No Emotional Safety",
-      description: "Feeling isolated and vulnerable in a new country without trusted support systems"
+      title: "Feeling Isolated",
+      description: "Starting life in Finland without trusted support or meaningful connections"
     },
     {
-      icon: Users,
-      title: "No Tribe",
-      description: "Struggling to find genuine connections and meaningful relationships with locals and fellow expats"
-    },
-    {
-      icon: Heart,
-      title: "No Peer Support",
-      description: "Missing practical guidance and emotional understanding from people who've been through the same journey"
+      icon: AlertCircle,
+      title: "Overwhelmed by Bureaucracy",
+      description: "Navigating Finnish systems and culture without guidance from experienced peers"
     }
   ];
 
   const solutions = [
     {
-      icon: Shield,
-      title: "Emotional Safety Network",
-      description: "Create safe spaces where you can be vulnerable, share struggles, and receive genuine support"
-    },
-    {
-      icon: Users,
-      title: "Meaningful Community",
-      description: "Connect with like-minded individuals who understand your journey and become lifelong friends"
+      icon: CheckCircle,
+      title: "Find Your Community",
+      description: "Connect with like-minded people who understand your journey and become genuine friends"
     },
     {
       icon: CheckCircle,
-      title: "Practical Integration",
-      description: "Get real help with bureaucracy, cultural navigation, and practical life setup from experienced peers"
+      title: "Get Practical Support",
+      description: "Receive real help with integration, bureaucracy, and cultural navigation from experienced peers"
     }
   ];
 
@@ -48,16 +38,13 @@ const ProblemSolution = () => {
               Belonging
             </span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            We understand the unique challenges of starting over in Finland. Here's how we transform your experience.
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Problems */}
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold text-center mb-8 text-destructive">
-              The Struggle is Real
+              The Struggle
             </h3>
             {problems.map((problem, index) => (
               <div 
@@ -79,13 +66,13 @@ const ProblemSolution = () => {
           {/* Solutions */}
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold text-center mb-8 text-nordic-blue">
-              Your New Reality
+              Your Solution
             </h3>
             {solutions.map((solution, index) => (
               <div 
                 key={index} 
                 className="flex gap-4 p-6 bg-card rounded-xl border border-nordic-blue/20 animate-fade-in"
-                style={{ animationDelay: `${(index + 3) * 0.1}s` }}
+                style={{ animationDelay: `${(index + 2) * 0.1}s` }}
               >
                 <div className="flex-shrink-0">
                   <solution.icon className="w-6 h-6 text-nordic-blue mt-1" />

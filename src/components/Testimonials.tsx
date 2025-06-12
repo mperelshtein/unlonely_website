@@ -6,23 +6,16 @@ const Testimonials = () => {
     {
       name: "Sarah M.",
       location: "Helsinki",
-      text: "Moving to Finland felt impossible until I found this community. Finally, I have people who understand the struggle and celebrate the small wins with me.",
+      text: "Moving to Finland felt impossible until I found this community. Finally, I have people who understand the struggle.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=64&h=64&fit=crop&crop=face"
     },
     {
       name: "Marcus K.",
       location: "Tampere",
-      text: "The practical support saved me months of frustration with bureaucracy. But more importantly, I found friends who became my chosen family in Finland.",
+      text: "The practical support saved me months of frustration. More importantly, I found friends who became my chosen family.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face"
-    },
-    {
-      name: "Elena R.",
-      location: "Turku",
-      text: "I was struggling with isolation and cultural barriers. This community didn't just help me integrate - they helped me thrive and rediscover my confidence.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&h=64&fit=crop&crop=face"
     }
   ];
 
@@ -36,12 +29,9 @@ const Testimonials = () => {
               Transformation
             </span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Real people, real stories of finding belonging in Finland through our community.
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}

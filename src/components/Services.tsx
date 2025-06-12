@@ -1,5 +1,5 @@
 
-import { Heart, Users, Briefcase, ArrowRight } from "lucide-react";
+import { Heart, Users } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -8,36 +8,22 @@ const Services = () => {
       title: "Emotional Support",
       subtitle: "Your mental wellbeing matters",
       features: [
-        "Safe spaces for sharing struggles",
-        "Peer counseling circles",
-        "Cultural adaptation guidance",
-        "Mental health resources"
+        "Safe spaces for sharing",
+        "Peer support circles",
+        "Cultural adaptation guidance"
       ],
       color: "warmth"
     },
     {
       icon: Users,
-      title: "Social Connection",
-      subtitle: "Build meaningful relationships",
+      title: "Community & Integration",
+      subtitle: "Build connections and navigate life",
       features: [
         "Curated community events",
-        "Interest-based groups",
-        "Local & expat networking",
-        "Friendship matching"
+        "Bureaucracy navigation help",
+        "Local networking opportunities"
       ],
       color: "nordic-blue"
-    },
-    {
-      icon: Briefcase,
-      title: "Practical Integration",
-      subtitle: "Navigate life admin with confidence",
-      features: [
-        "Bureaucracy navigation help",
-        "Housing and banking support",
-        "Career transition guidance",
-        "Cultural integration workshops"
-      ],
-      color: "accent"
     }
   ];
 
@@ -46,17 +32,14 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            Three Pillars of{" "}
+            How We{" "}
             <span className="text-transparent bg-clip-text gradient-warmth">
-              Support
+              Support You
             </span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            A holistic approach to making Finland feel like home, addressing every aspect of your new life journey.
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {services.map((service, index) => (
             <div 
               key={index}
@@ -70,7 +53,7 @@ const Services = () => {
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className="text-muted-foreground mb-6">{service.subtitle}</p>
               
-              <ul className="space-y-3 mb-6">
+              <ul className="space-y-3">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-3">
                     <div className={`w-1.5 h-1.5 rounded-full bg-${service.color}`}></div>
@@ -78,11 +61,6 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-              
-              <div className={`flex items-center gap-2 text-sm font-medium text-${service.color} group-hover:gap-3 transition-all duration-300`}>
-                Learn more
-                <ArrowRight className="w-4 h-4" />
-              </div>
             </div>
           ))}
         </div>
