@@ -7,55 +7,55 @@
 
 @layer base {
   :root {
-    --background: 252 253 255;
-    --foreground: 15 23 42;
+    --background: 246 243 239;
+    --foreground: 38 50 66;
 
     --card: 255 255 255;
-    --card-foreground: 15 23 42;
+    --card-foreground: 38 50 66;
 
     --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
+    --popover-foreground: 38 50 66;
 
-    --primary: 59 130 246;
-    --primary-foreground: 248 250 252;
+    --primary: 241 141 121;
+    --primary-foreground: 255 255 255;
 
     --secondary: 241 245 249;
-    --secondary-foreground: 51 65 85;
+    --secondary-foreground: 38 50 66;
 
     --muted: 248 250 252;
     --muted-foreground: 100 116 139;
 
-    --accent: 253 224 71;
-    --accent-foreground: 92 83 0;
+    --accent: 241 141 121;
+    --accent-foreground: 255 255 255;
 
     --destructive: 239 68 68;
     --destructive-foreground: 248 250 252;
 
     --border: 226 232 240;
     --input: 226 232 240;
-    --ring: 59 130 246;
+    --ring: 241 141 121;
 
     --radius: 0.75rem;
 
-    --warmth: 251 146 60;
+    --warmth: 241 141 121;
     --warmth-foreground: 255 255 255;
     
-    --nordic-blue: 37 99 235;
-    --nordic-light: 239 246 255;
+    --nordic-blue: 38 50 66;
+    --nordic-light: 246 243 239;
   }
 
   .dark {
-    --background: 15 23 42;
-    --foreground: 248 250 252;
+    --background: 38 50 66;
+    --foreground: 246 243 239;
 
     --card: 30 41 59;
-    --card-foreground: 248 250 252;
+    --card-foreground: 246 243 239;
 
     --popover: 30 41 59;
-    --popover-foreground: 248 250 252;
+    --popover-foreground: 246 243 239;
 
-    --primary: 96 165 250;
-    --primary-foreground: 15 23 42;
+    --primary: 241 141 121;
+    --primary-foreground: 38 50 66;
 
     --secondary: 51 65 85;
     --secondary-foreground: 226 232 240;
@@ -63,20 +63,20 @@
     --muted: 51 65 85;
     --muted-foreground: 148 163 184;
 
-    --accent: 250 204 21;
-    --accent-foreground: 15 23 42;
+    --accent: 241 141 121;
+    --accent-foreground: 38 50 66;
 
     --destructive: 220 38 38;
     --destructive-foreground: 248 250 252;
 
     --border: 51 65 85;
     --input: 51 65 85;
-    --ring: 96 165 250;
+    --ring: 241 141 121;
 
-    --warmth: 251 146 60;
+    --warmth: 241 141 121;
     --warmth-foreground: 255 255 255;
     
-    --nordic-blue: 96 165 250;
+    --nordic-blue: 241 141 121;
     --nordic-light: 30 41 59;
   }
 }
