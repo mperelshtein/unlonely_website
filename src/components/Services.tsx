@@ -9,10 +9,8 @@ const Services = () => {
       subtitle: "Your mental wellbeing matters",
       features: [
         "Safe spaces for sharing",
-        "Peer support circles",
-        "Cultural adaptation guidance"
+        "Peer support circles"
       ],
-      color: "warmth"
     },
     {
       icon: Users,
@@ -20,10 +18,8 @@ const Services = () => {
       subtitle: "Build connections and navigate life",
       features: [
         "Curated community events",
-        "Bureaucracy navigation help",
         "Local networking opportunities"
       ],
-      color: "nordic-blue"
     }
   ];
 
@@ -31,11 +27,8 @@ const Services = () => {
     <section className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            How We{" "}
-            <span className="text-transparent bg-clip-text gradient-warmth">
-              Support You
-            </span>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
+            How We Support You
           </h2>
         </div>
 
@@ -46,18 +39,18 @@ const Services = () => {
               className="group bg-card rounded-2xl border p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-scale-in"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className={`w-14 h-14 rounded-xl bg-${service.color}/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <service.icon className={`w-7 h-7 text-${service.color}`} />
+              <div className="w-14 h-14 rounded-xl bg-foreground/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <service.icon className="w-7 h-7 text-foreground" />
               </div>
               
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-muted-foreground mb-6">{service.subtitle}</p>
+              <h3 className="text-xl font-semibold mb-2 text-foreground">{service.title}</h3>
+              <p className="text-foreground mb-6">{service.subtitle}</p>
               
               <ul className="space-y-3">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-3">
-                    <div className={`w-1.5 h-1.5 rounded-full bg-${service.color}`}></div>
-                    <span className="text-sm text-muted-foreground">{feature}</span>
+                    <div className="w-1.5 h-1.5 rounded-full bg-foreground"></div>
+                    <span className="text-sm text-foreground">{feature}</span>
                   </li>
                 ))}
               </ul>
