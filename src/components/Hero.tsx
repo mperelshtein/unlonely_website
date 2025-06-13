@@ -10,24 +10,24 @@ const Hero = () => {
 
   return (
     <section className="relative overflow-hidden gradient-hero">
-      <div className="container mx-auto px-4 py-20 lg:py-32">
+      <div className="container mx-auto px-4 py-16 lg:py-24">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
-          <div className="flex justify-center items-center gap-2 mb-6">
+          <div className="flex justify-center items-center gap-2 mb-4">
             <MapPin className="w-5 h-5 text-foreground" />
             <span className="text-sm font-medium text-foreground tracking-wide uppercase">
               Starting life in Finland
             </span>
           </div>
           
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight text-foreground">
+          <h1 className="text-4xl lg:text-6xl font-bold mb-4 leading-tight text-foreground">
             Find Your Tribe in Finland
           </h1>
           
-          <p className="text-xl lg:text-2xl text-foreground mb-8 leading-relaxed">
+          <p className="text-xl lg:text-2xl text-foreground mb-6 leading-relaxed">
             We handle the social, practical, and emotional chaos of starting a life in Finland — so you don't have to
           </p>
           
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
             <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm px-4 py-2 rounded-full border">
               <Heart className="w-4 h-4 text-foreground" />
               <span className="text-sm font-medium text-foreground">Emotional Safety</span>

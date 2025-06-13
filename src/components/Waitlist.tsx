@@ -12,15 +12,15 @@ const Waitlist = () => {
   };
 
   return (
-    <section id="waitlist" className="py-20 gradient-hero">
+    <section id="waitlist" className="py-12 gradient-hero">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
-          <div className="bg-card rounded-3xl p-12 border shadow-xl">
-            <Users className="w-16 h-16 text-foreground mx-auto mb-6" />
-            <h3 className="text-3xl font-bold mb-4 text-foreground">
+          <div className="bg-card rounded-3xl p-8 border shadow-xl">
+            <Users className="w-12 h-12 text-foreground mx-auto mb-4" />
+            <h3 className="text-2xl font-bold mb-3 text-foreground">
               Ready to Find Your Tribe?
             </h3>
-            <p className="text-lg text-foreground mb-8">
+            <p className="text-base text-foreground mb-6">
               Join our waitlist to be the first to know when we launch.
             </p>
 
@@ -41,7 +41,7 @@ const Waitlist = () => {
               </Button>
             </div>
 
-            <p className="text-xs text-foreground mt-6">
+            <p className="text-xs text-foreground mt-4">
               We respect your privacy. No spam, ever.
             </p>
           </div>

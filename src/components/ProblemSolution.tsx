@@ -19,18 +19,18 @@ const ProblemSolution = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-12 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">
             From Lonely to Belonging
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Problems */}
-          <div className="space-y-8">
-            <h3 className="text-2xl font-semibold text-center mb-8 text-foreground">
+          <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-center mb-6 text-foreground">
               The Struggle
             </h3>
             {problems.map((problem, index) => (
@@ -51,8 +51,8 @@ const ProblemSolution = () => {
           </div>
 
           {/* Solutions */}
-          <div className="space-y-8">
-            <h3 className="text-2xl font-semibold text-center mb-8 text-foreground">
+          <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-center mb-6 text-foreground">
               Your Solution
             </h3>
             {solutions.map((solution, index) => (

@@ -3,14 +3,14 @@ import { Heart, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-background py-16">
+    <footer className="bg-foreground text-background py-12">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <h3 className="text-2xl font-bold mb-4 flex items-center justify-center gap-2">
+          <h3 className="text-xl font-bold mb-3 flex items-center justify-center gap-2">
             unlonely.club
-            <Heart className="w-6 h-6 text-background" />
+            <Heart className="w-5 h-5 text-background" />
           </h3>
-          <p className="text-background/70 mb-6 max-w-md mx-auto">
+          <p className="text-background/70 mb-4 max-w-md mx-auto text-sm">
             Building emotional safety, meaningful connections, and practical support for everyone starting a new life in Finland.
           </p>
           <div className="flex justify-center">
@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-background/20 mt-12 pt-8 text-center">
+        <div className="border-t border-background/20 mt-8 pt-6 text-center">
           <p className="text-background/70 text-sm">
             © 2024 unlonely.club. Made with <Heart className="w-4 h-4 inline text-background" /> for the Finnish expat community.
           </p>
