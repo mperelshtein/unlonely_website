@@ -1,9 +1,14 @@
 
-import { Heart, Mail } from "lucide-react";
+import { Heart } from "lucide-react";
+import { Send } from "lucide-react";
 
 const Footer = () => {
+  const handleTelegramClick = () => {
+    window.open('https://t.me/unlonely_club', '_blank');
+  };
+
   return (
-    <footer className="bg-foreground text-background py-12">
+    <footer className="bg-foreground text-background py-8">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h3 className="text-xl font-bold mb-3 flex items-center justify-center gap-2">
@@ -14,14 +19,17 @@ const Footer = () => {
             Building emotional safety, meaningful connections, and practical support for everyone starting a new life in Finland.
           </p>
           <div className="flex justify-center">
-            <div className="flex items-center gap-2 text-sm">
-              <Mail className="w-4 h-4" />
-              <span>hello@unlonely.club</span>
-            </div>
+            <button 
+              onClick={handleTelegramClick}
+              className="flex items-center gap-2 text-sm hover:text-background/80 transition-colors"
+            >
+              <Send className="w-4 h-4" />
+              <span>@unlonely_club</span>
+            </button>
           </div>
         </div>
         
-        <div className="border-t border-background/20 mt-8 pt-6 text-center">
+        <div className="border-t border-background/20 mt-6 pt-4 text-center">
           <p className="text-background/70 text-sm">
             © 2024 unlonely.club. Made with <Heart className="w-4 h-4 inline text-background" /> for the Finnish expat community.
           </p>
