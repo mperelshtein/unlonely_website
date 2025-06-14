@@ -1,5 +1,5 @@
 
-import { Switch } from "@/components/ui/switch";
+import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useNavigate } from "react-router-dom";
 
@@ -7,8 +7,7 @@ const LanguageToggle = () => {
   const { language, setLanguage } = useLanguage();
   const navigate = useNavigate();
 
-  const handleLanguageChange = (checked: boolean) => {
-    const newLanguage = checked ? 'ru' : 'en';
+  const handleLanguageChange = (newLanguage: 'en' | 'ru') => {
     setLanguage(newLanguage);
     
     // Navigate to appropriate page
@@ -20,25 +19,23 @@ const LanguageToggle = () => {
   };
 
   return (
-    <div className="fixed top-4 right-4 z-50 flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full border shadow-lg">
-      <span className={`text-sm font-medium transition-colors ${
-        language === 'en' 
-          ? 'text-primary bg-primary/10 px-2 py-1 rounded-md' 
-          : 'text-muted-foreground'
-      }`}>
+    <div className="fixed top-4 right-4 z-50 flex items-center gap-1 bg-white/90 backdrop-blur-sm p-1 rounded-full border shadow-lg">
+      <Button
+        variant={language === 'en' ? 'default' : 'ghost'}
+        size="sm"
+        onClick={() => handleLanguageChange('en')}
+        className="rounded-full px-3 py-1 text-xs font-medium"
+      >
         EN
-      </span>
-      <Switch
-        checked={language === 'ru'}
-        onCheckedChange={handleLanguageChange}
-      />
-      <span className={`text-sm font-medium transition-colors ${
-        language === 'ru' 
-          ? 'text-primary bg-primary/10 px-2 py-1 rounded-md' 
-          : 'text-muted-foreground'
-      }`}>
+      </Button>
+      <Button
+        variant={language === 'ru' ? 'default' : 'ghost'}
+        size="sm"
+        onClick={() => handleLanguageChange('ru')}
+        className="rounded-full px-3 py-1 text-xs font-medium"
+      >
         RU
-      </span>
+      </Button>
     </div>
   );
 };
