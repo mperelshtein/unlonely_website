@@ -42,7 +42,7 @@ const Tribes = () => {
         }}>
               {/* Floating Tribe Card */}
               <div className="">
-                <div className="text-center bg-[#f6f3ef] my-0 py-[10px]">
+                <div className="text-center my-0 py-[10px] rounded-xl bg-[#f6f3ef]">
                   <div className={`w-16 h-16 ${tribe.color} rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-inner`}>
                     <tribe.icon className={`w-8 h-8 ${tribe.iconColor}`} />
                   </div>
