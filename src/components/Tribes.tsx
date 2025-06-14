@@ -1,41 +1,33 @@
-
 import { TrendingUp, Zap, Heart } from "lucide-react";
-
 const Tribes = () => {
-  const tribes = [
-    {
-      name: "Tribe.growth",
-      description: "Do not stop your growth because you moved to a new country",
-      icon: TrendingUp,
-      color: "bg-emerald-100 border-emerald-200",
-      iconColor: "text-emerald-600",
-      testimonial: "I joined the growth tribe and got a warm intro into Supercell!"
-    },
-    {
-      name: "Tribe.energy", 
-      description: "Find new sports and continue old hobbies",
-      icon: Zap,
-      color: "bg-orange-100 border-orange-200",
-      iconColor: "text-orange-600",
-      testimonial: "I joined the energy tribe and finally got enrolled in tennis lessons!"
-    },
-    {
-      name: "Tribe.support",
-      description: "Get the community support as families or individuals", 
-      icon: Heart,
-      color: "bg-rose-100 border-rose-200",
-      iconColor: "text-rose-600",
-      testimonial: "I joined the support tribe and found the perfect kindergarten!"
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+  const tribes = [{
+    name: "Tribe.growth",
+    description: "Do not stop your growth because you moved to a new country",
+    icon: TrendingUp,
+    color: "bg-emerald-100 border-emerald-200",
+    iconColor: "text-emerald-600",
+    testimonial: "I joined the growth tribe and got a warm intro into Supercell!"
+  }, {
+    name: "Tribe.energy",
+    description: "Find new sports and continue old hobbies",
+    icon: Zap,
+    color: "bg-orange-100 border-orange-200",
+    iconColor: "text-orange-600",
+    testimonial: "I joined the energy tribe and finally got enrolled in tennis lessons!"
+  }, {
+    name: "Tribe.support",
+    description: "Get the community support as families or individuals",
+    icon: Heart,
+    color: "bg-rose-100 border-rose-200",
+    iconColor: "text-rose-600",
+    testimonial: "I joined the support tribe and found the perfect kindergarten!"
+  }];
+  return <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">
             Find Your{" "}
-            <span className="text-transparent bg-clip-text gradient-warmth">
+            <span className="bg-clip-text gradient-warmth text-transparent">
               Tribe
             </span>
           </h2>
@@ -45,8 +37,9 @@ const Tribes = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {tribes.map((tribe, index) => (
-            <div key={index} className="flex flex-col items-center animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
+          {tribes.map((tribe, index) => <div key={index} className="flex flex-col items-center animate-fade-in" style={{
+          animationDelay: `${index * 0.2}s`
+        }}>
               {/* Floating Tribe Card */}
               <div className={`${tribe.color} rounded-3xl p-8 border-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 mb-8 w-full max-w-sm`}>
                 <div className="text-center">
@@ -71,12 +64,9 @@ const Tribes = () => {
                   "{tribe.testimonial}"
                 </p>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Tribes;
