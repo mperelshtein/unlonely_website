@@ -25,9 +25,8 @@ const Hero = () => {
             From Stranger to Belonging
           </h2>
           
-          <p className="text-xl lg:text-2xl text-black mb-6 leading-relaxed">
-            Transform isolation into integration. Build confidence through genuine friendships and create your home away from home in Finland.
-          </p>
+          <p className="text-xl lg:text-2xl text-black mb-6 leading-relaxed">We handle the social, practical, and emotional chaos of starting a life in Finland — so you don't have to
+        </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm px-4 py-2 rounded-full border">
