@@ -8,7 +8,7 @@ const Hero = () => {
     });
   };
   return <section className="relative overflow-hidden gradient-hero bg-[#f6f3ef]">
-      <div className="container mx-auto px-4 lg:py-16 bg-[#f6f3ef] py-[60px]">
+      <div className="container mx-auto px-4 lg:py-16 py-[60px] bg-transparent">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
           <div className="flex justify-center items-center gap-2 mb-4">
             <MapPin className="w-5 h-5 text-black" />
