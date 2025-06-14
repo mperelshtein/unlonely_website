@@ -1,14 +1,10 @@
-
 import { Heart } from "lucide-react";
 import { Send } from "lucide-react";
-
 const Footer = () => {
   const handleTelegramClick = () => {
     window.open('https://t.me/unlonely_club', '_blank');
   };
-
-  return (
-    <footer className="bg-foreground text-white py-8">
+  return <footer className="text-white py-8 bg-blue-50">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h3 className="text-xl font-bold mb-3 flex items-center justify-center gap-2 text-white">
@@ -19,10 +15,7 @@ const Footer = () => {
             Building emotional safety, meaningful connections, and practical support for everyone starting a new life in Finland.
           </p>
           <div className="flex justify-center">
-            <button 
-              onClick={handleTelegramClick}
-              className="flex items-center gap-2 text-sm text-white hover:text-white/80 transition-colors"
-            >
+            <button onClick={handleTelegramClick} className="flex items-center gap-2 text-sm text-white hover:text-white/80 transition-colors">
               <Send className="w-4 h-4" />
               <span>@unlonely_club</span>
             </button>
@@ -35,8 +28,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
