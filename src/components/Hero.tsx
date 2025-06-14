@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Users, MapPin, Home } from "lucide-react";
 const Hero = () => {
@@ -50,7 +49,7 @@ const Hero = () => {
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
           
-          <p className="text-sm text-black mt-4">Join hundreds of immigrants building their new life in Finland</p>
+          <p className="text-sm text-black mt-4">Join thousands of immigrants building their new life in Finland</p>
         </div>
       </div>
       
