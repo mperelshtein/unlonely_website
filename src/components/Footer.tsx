@@ -1,11 +1,10 @@
-
 import { Heart } from "lucide-react";
 import { Send } from "lucide-react";
 const Footer = () => {
   const handleTelegramClick = () => {
     window.open('https://t.me/unlonely_club', '_blank');
   };
-  return <footer className="text-white py-8 bg-blue-50">
+  return <footer className="text-white py-8 bg-[#f6f3ef]">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h3 className="text-xl font-bold mb-3 flex items-center justify-center gap-2 text-white">
