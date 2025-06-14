@@ -18,7 +18,7 @@ const Waitlist = () => {
             <h3 className="text-2xl font-bold mb-3 text-foreground">
               Ready to Build Your New Home in Finland?
             </h3>
-            <p className="text-base text-foreground mb-6">Join thousands of immigrants who are transforming their Finland experience from isolation to integration.</p>
+            <p className="text-base text-foreground mb-6">Join thousands of immigrants who are transforming their Finland experience from isolation to integration</p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button onClick={handleJoinWaitlist} className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 h-12 rounded-xl">Join the Waitlist</Button>
