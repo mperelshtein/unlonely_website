@@ -1,11 +1,12 @@
+
 import { Heart, Users, Home } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
       icon: Heart,
-      title: "Emotional Support",
-      subtitle: "Your mental wellbeing matters",
+      title: "Social Support Network",
+      subtitle: "Build confidence through genuine connections",
       features: [
         "Peer support tribes",
         "Curated 1:1 intros with fellow immigrants",
@@ -14,8 +15,8 @@ const Services = () => {
     },
     {
       icon: Users,
-      title: "Community & Integration",
-      subtitle: "Build connections and navigate life",
+      title: "Integration & Belonging",
+      subtitle: "Find your place in Finnish society",
       features: [
         "Referrals to events from various communities",
         "Local networking opportunities",
@@ -24,8 +25,8 @@ const Services = () => {
     },
     {
       icon: Home,
-      title: "Solution of the Everyday Problems",
-      subtitle: "Practical help for daily life",
+      title: "Make Finland Your Home",
+      subtitle: "Practical guidance for your new life",
       features: [
         "Insights into housing and career",
         "Cultural event announcements",
@@ -39,8 +40,11 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">
-            How We Support You
+            Your Journey to Belonging
           </h2>
+          <p className="text-lg text-foreground">
+            From feeling like an outsider to calling Finland home - we support every step of your integration.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">

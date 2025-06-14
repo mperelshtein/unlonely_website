@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Users } from "lucide-react";
+import { Users, Home } from "lucide-react";
 
 const Waitlist = () => {
   const handleJoinWaitlist = () => {
@@ -16,12 +16,15 @@ const Waitlist = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
           <div className="bg-card rounded-3xl p-8 border shadow-xl">
-            <Users className="w-12 h-12 text-foreground mx-auto mb-4" />
+            <div className="flex justify-center items-center gap-2 mb-4">
+              <Home className="w-8 h-8 text-foreground" />
+              <Users className="w-8 h-8 text-foreground" />
+            </div>
             <h3 className="text-2xl font-bold mb-3 text-foreground">
-              Ready to Find Your Tribe?
+              Ready to Build Your New Home in Finland?
             </h3>
             <p className="text-base text-foreground mb-6">
-              Join our waitlist to be the first to know when we launch.
+              Join hundreds of immigrants who are transforming their Finland experience from isolation to integration.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -29,7 +32,7 @@ const Waitlist = () => {
                 onClick={handleJoinWaitlist}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 h-12 rounded-xl"
               >
-                Join Waitlist
+                Start Your Journey
               </Button>
               
               <Button 
@@ -37,12 +40,12 @@ const Waitlist = () => {
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 h-12 rounded-xl"
               >
-                Give your feedback
+                Share Your Story
               </Button>
             </div>
 
             <p className="text-xs text-foreground mt-4">
-              We respect your privacy. No spam, ever.
+              Your privacy matters to us. No spam, just genuine community building.
             </p>
           </div>
         </div>

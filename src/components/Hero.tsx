@@ -1,5 +1,6 @@
+
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Heart, Users, MapPin } from "lucide-react";
+import { ArrowRight, Heart, Users, MapPin, Home } from "lucide-react";
 const Hero = () => {
   const scrollToWaitlist = () => {
     const waitlistSection = document.getElementById('waitlist');
@@ -10,9 +11,6 @@ const Hero = () => {
   return <section className="relative overflow-hidden gradient-hero">
       <div className="container mx-auto px-4 py-12 lg:py-16">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
-          {/* Brand name at the top */}
-          
-          
           <div className="flex justify-center items-center mb-6">
             <img src="/lovable-uploads/b2e5218d-c6b9-4001-a854-11b708779dd5.png" alt="unlonely.club logo" className="h-16 w-auto" />
           </div>
@@ -20,39 +18,39 @@ const Hero = () => {
           <div className="flex justify-center items-center gap-2 mb-4">
             <MapPin className="w-5 h-5 text-black" />
             <span className="text-sm font-medium text-black tracking-wide uppercase">
-              Starting life in Finland
+              Building Your New Life in Finland
             </span>
           </div>
           
           <h2 className="text-4xl lg:text-6xl font-bold mb-4 leading-tight text-black">
-            Find Your Tribe in Finland
+            From Stranger to Belonging
           </h2>
           
           <p className="text-xl lg:text-2xl text-black mb-6 leading-relaxed">
-            We handle the social, practical, and emotional chaos of starting a life in Finland — so you don&apos;t have to
+            Transform isolation into integration. Build confidence through genuine friendships and create your home away from home in Finland.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm px-4 py-2 rounded-full border">
-              <Heart className="w-4 h-4 text-black" />
-              <span className="text-sm font-medium text-black">Emotional Safety</span>
+              <Home className="w-4 h-4 text-black" />
+              <span className="text-sm font-medium text-black">Feel at Home</span>
             </div>
             <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm px-4 py-2 rounded-full border">
               <Users className="w-4 h-4 text-black" />
-              <span className="text-sm font-medium text-black">Real Community</span>
+              <span className="text-sm font-medium text-black">Build Friendships</span>
             </div>
             <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm px-4 py-2 rounded-full border">
-              <MapPin className="w-4 h-4 text-black" />
-              <span className="text-sm font-medium text-black">Integration Support</span>
+              <Heart className="w-4 h-4 text-black" />
+              <span className="text-sm font-medium text-black">Gain Confidence</span>
             </div>
           </div>
           
           <Button onClick={scrollToWaitlist} size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl">
-            Join the Waitlist
+            Start Your Integration Journey
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
           
-          <p className="text-sm text-black mt-4">Be the first to know when we launch</p>
+          <p className="text-sm text-black mt-4">Join hundreds of immigrants building their new life in Finland</p>
         </div>
       </div>
       
