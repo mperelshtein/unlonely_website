@@ -1,26 +1,20 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Users, MapPin } from "lucide-react";
-
 const Hero = () => {
   const scrollToWaitlist = () => {
     const waitlistSection = document.getElementById('waitlist');
-    waitlistSection?.scrollIntoView({ behavior: 'smooth' });
+    waitlistSection?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section className="relative overflow-hidden gradient-hero">
+  return <section className="relative overflow-hidden gradient-hero">
       <div className="container mx-auto px-4 py-12 lg:py-16">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
           {/* Brand name at the top */}
-          <h1 className="text-2xl font-bold mb-6 text-black">unlonely.club</h1>
+          
           
           <div className="flex justify-center items-center mb-6">
-            <img 
-              src="/lovable-uploads/b2e5218d-c6b9-4001-a854-11b708779dd5.png" 
-              alt="unlonely.club logo" 
-              className="h-16 w-auto"
-            />
+            <img src="/lovable-uploads/b2e5218d-c6b9-4001-a854-11b708779dd5.png" alt="unlonely.club logo" className="h-16 w-auto" />
           </div>
           
           <div className="flex justify-center items-center gap-2 mb-4">
@@ -53,18 +47,12 @@ const Hero = () => {
             </div>
           </div>
           
-          <Button 
-            onClick={scrollToWaitlist}
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl"
-          >
+          <Button onClick={scrollToWaitlist} size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl">
             Join the Waitlist
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
           
-          <p className="text-sm text-black mt-4">
-            Be the first to know when we launch • No spam, ever
-          </p>
+          <p className="text-sm text-black mt-4">Be the first to know when we launch</p>
         </div>
       </div>
       
@@ -74,8 +62,6 @@ const Hero = () => {
         <div className="absolute top-40 right-20 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
         <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-coral-accent/20 rounded-full blur-xl"></div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

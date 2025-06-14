@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="text-center">
           <h3 className="text-xl font-bold mb-3 flex items-center justify-center gap-2 text-white">
             unlonely.club
-            <Heart className="w-5 h-5 text-white" />
+            
           </h3>
           <p className="text-white/70 mb-4 max-w-md mx-auto text-sm">
             Building emotional safety, meaningful connections, and practical support for everyone starting a new life in Finland.
