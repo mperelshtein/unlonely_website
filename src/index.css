@@ -8,22 +8,22 @@
 @layer base {
   :root {
     --background: 255 255 255;
-    --foreground: 30 41 59;
+    --foreground: 0 0 0; /* Pure black text */
 
     --card: 255 255 255;
-    --card-foreground: 30 41 59;
+    --card-foreground: 0 0 0; /* Pure black text */
 
     --popover: 255 255 255;
-    --popover-foreground: 30 41 59;
+    --popover-foreground: 0 0 0; /* Pure black text */
 
     --primary: 30 41 59;
     --primary-foreground: 255 255 255;
 
     --secondary: 241 245 249;
-    --secondary-foreground: 30 41 59;
+    --secondary-foreground: 0 0 0; /* Pure black text */
 
     --muted: 248 250 252;
-    --muted-foreground: 71 85 105;
+    --muted-foreground: 0 0 0; /* Pure black text */
 
     --accent: 255 127 102;
     --accent-foreground: 255 255 255;
@@ -47,22 +47,22 @@
 
   .dark {
     --background: 30 41 59;
-    --foreground: 255 255 255;
+    --foreground: 0 0 0; /* Pure black text */
 
     --card: 51 65 85;
-    --card-foreground: 255 255 255;
+    --card-foreground: 0 0 0; /* Pure black text */
 
     --popover: 51 65 85;
-    --popover-foreground: 255 255 255;
+    --popover-foreground: 0 0 0; /* Pure black text */
 
     --primary: 255 255 255;
     --primary-foreground: 30 41 59;
 
     --secondary: 51 65 85;
-    --secondary-foreground: 226 232 240;
+    --secondary-foreground: 0 0 0; /* Pure black text */
 
     --muted: 51 65 85;
-    --muted-foreground: 148 163 184;
+    --muted-foreground: 0 0 0; /* Pure black text */
 
     --accent: 255 127 102;
     --accent-foreground: 255 255 255;
@@ -89,8 +89,9 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background font-sans;
     font-feature-settings: "rlig" 1, "calt" 1;
+    color: black !important;
   }
 }
 
@@ -102,12 +103,12 @@
   background: linear-gradient(135deg, hsl(var(--coral-accent)) 0%, hsl(var(--accent)) 100%);
 }
 
-/* Force dark text everywhere */
-.text-dark {
-  color: hsl(var(--foreground)) !important;
+/* Force all text to be pure black */
+*, h1, h2, h3, h4, h5, h6, p, span, div, li, a, button {
+  color: black !important;
 }
 
-/* Ensure all text is dark by default */
-h1, h2, h3, h4, h5, h6, p, span, div, li {
-  color: hsl(var(--foreground));
+/* Exception for button text that should remain white on colored backgrounds */
+.bg-primary *, .bg-accent *, .bg-warmth * {
+  color: white !important;
 }
