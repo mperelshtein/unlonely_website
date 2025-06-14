@@ -8,8 +8,9 @@ const Services = () => {
       title: "Emotional Support",
       subtitle: "Your mental wellbeing matters",
       features: [
-        "Safe spaces for sharing",
-        "Peer support circles"
+        "Peer support tribes",
+        "Curated 1:1 intros with fellow immigrants",
+        "Matching system to meet people with your interests"
       ],
     },
     {
