@@ -18,8 +18,9 @@ const Services = () => {
       title: "Community & Integration",
       subtitle: "Build connections and navigate life",
       features: [
-        "Curated community events",
-        "Local networking opportunities"
+        "Referrals to events from various communities",
+        "Local networking opportunities",
+        "Tribes for growth, energy and emotional support"
       ],
     },
     {
