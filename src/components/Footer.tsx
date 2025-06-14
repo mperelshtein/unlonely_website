@@ -11,9 +11,7 @@ const Footer = () => {
             unlonely.club
             
           </h3>
-          <p className="text-white/70 mb-4 max-w-md mx-auto text-sm">
-            Building emotional safety, meaningful connections, and practical support for everyone starting a new life in Finland.
-          </p>
+          <p className="text-white/70 mb-4 max-w-md mx-auto text-sm">Building emotional safety, meaningful connections, and practical support for everyone starting a new life in Finland</p>
           <div className="flex justify-center">
             <button onClick={handleTelegramClick} className="flex items-center gap-2 text-sm text-white hover:text-white/80 transition-colors">
               <Send className="w-4 h-4" />
