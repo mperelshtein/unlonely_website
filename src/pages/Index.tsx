@@ -10,9 +10,9 @@ const Index = () => {
       <Hero />
       <Separator className="h-[2px] opacity-100 bg-transparent" />
       <ProblemSolution />
-      <Separator className="h-[2px] opacity-100 bg-zinc-200" />
+      <Separator className="h-[2px] opacity-100 bg-zinc-100" />
       <Services />
-      <Separator className="h-[2px] opacity-100 bg-zinc-200" />
+      <Separator className="h-[2px] opacity-100 bg-zinc-100" />
       <Tribes />
       <Separator className="h-[2px] opacity-100 bg-transparent" />
       <Waitlist />
