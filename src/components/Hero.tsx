@@ -8,7 +8,7 @@ const Hero = () => {
     });
   };
   return <section className="relative overflow-hidden gradient-hero">
-      <div className="container mx-auto px-4 py-12 lg:py-16 bg-blue-50">
+      <div className="container mx-auto px-4 py-12 lg:py-16 bg-transparent">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
           <div className="flex justify-center items-center mb-6">
             <img src="/lovable-uploads/b2e5218d-c6b9-4001-a854-11b708779dd5.png" alt="unlonely.club logo" className="h-16 w-auto" />
