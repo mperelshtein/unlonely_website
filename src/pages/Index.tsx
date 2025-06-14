@@ -11,15 +11,15 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Hero />
-      <Separator className="bg-border h-px opacity-100" />
+      <Separator className="bg-black h-[2px] opacity-100" />
       <ProblemSolution />
-      <Separator className="bg-border h-px opacity-100" />
+      <Separator className="bg-black h-[2px] opacity-100" />
       <Services />
-      <Separator className="bg-border h-px opacity-100" />
+      <Separator className="bg-black h-[2px] opacity-100" />
       <Tribes />
-      <Separator className="bg-border h-px opacity-100" />
+      <Separator className="bg-black h-[2px] opacity-100" />
       <Waitlist />
-      <Separator className="bg-border h-px opacity-100" />
+      <Separator className="bg-black h-[2px] opacity-100" />
       <Footer />
     </div>
   );
