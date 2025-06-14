@@ -1,4 +1,3 @@
-
 import { Heart, Users, Home } from "lucide-react";
 
 const Services = () => {
@@ -28,10 +27,9 @@ const Services = () => {
       title: "Solution of the Everyday Problems",
       subtitle: "Practical help for daily life",
       features: [
-        "Housing assistance",
-        "Family support services",
-        "Investment guidance",
-        "Administrative help"
+        "Insights into housing and career",
+        "Cultural event announcements",
+        "Chatbot"
       ],
     }
   ];
