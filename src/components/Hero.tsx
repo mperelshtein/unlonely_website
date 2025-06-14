@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Users, MapPin, Home } from "lucide-react";
-
 const Hero = () => {
   const scrollToWaitlist = () => {
     const waitlistSection = document.getElementById('waitlist');
@@ -8,10 +7,8 @@ const Hero = () => {
       behavior: 'smooth'
     });
   };
-
-  return (
-    <section className="relative overflow-hidden gradient-hero">
-      <div className="container mx-auto px-4 py-12 lg:py-16 bg-transparent">
+  return <section className="relative overflow-hidden gradient-hero">
+      <div className="container mx-auto px-4 py-12 lg:py-16 bg-[#f6f3ef]">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
           <div className="flex justify-center items-center gap-2 mb-4">
             <MapPin className="w-5 h-5 text-black" />
@@ -60,8 +57,6 @@ const Hero = () => {
         <div className="absolute top-40 right-20 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
         <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-coral-accent/20 rounded-full blur-xl"></div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
