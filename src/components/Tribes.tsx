@@ -25,13 +25,13 @@ const Tribes = () => {
   return <section className="bg-white py-[30px]">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">
+          <h2 className="text-4xl font-bold mb-6 text-black lg:text-4xl">
             Find Your{" "}
             <span className="bg-clip-text gradient-warmth text-transparent">
               Tribe
             </span>
           </h2>
-          <p className="text-xl text-black leading-relaxed">
+          <p className="text-black leading-relaxed text-lg">
             Connect with like-minded people who share your goals and interests
           </p>
         </div>
