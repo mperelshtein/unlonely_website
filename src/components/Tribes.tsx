@@ -22,7 +22,7 @@ const Tribes = () => {
     iconColor: "text-rose-600",
     testimonial: "I joined the support tribe and found the perfect kindergarten!"
   }];
-  return <section className="py-20 bg-white">
+  return <section className="bg-white py-[30px]">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">
@@ -41,7 +41,7 @@ const Tribes = () => {
           animationDelay: `${index * 0.2}s`
         }}>
               {/* Floating Tribe Card */}
-              <div className={`${tribe.color} rounded-3xl p-8 border-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 mb-8 w-full max-w-sm`}>
+              <div className="">
                 <div className="text-center">
                   <div className={`w-16 h-16 ${tribe.color} rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-inner`}>
                     <tribe.icon className={`w-8 h-8 ${tribe.iconColor}`} />
