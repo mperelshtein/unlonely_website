@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 const Index = () => {
   return <div className="min-h-screen">
       <Hero />
-      <Separator className="h-[2px] opacity-100 bg-zinc-200" />
+      <Separator className="h-[2px] opacity-100 bg-transparent" />
       <ProblemSolution />
       <Separator className="h-[2px] opacity-100 bg-zinc-200" />
       <Services />
