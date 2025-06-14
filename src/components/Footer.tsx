@@ -1,3 +1,4 @@
+
 import { Heart } from "lucide-react";
 import { Send } from "lucide-react";
 const Footer = () => {
@@ -22,7 +23,7 @@ const Footer = () => {
         
         <div className="border-t border-white/20 mt-6 pt-4 text-center">
           <p className="text-white/70 text-sm">
-            © 2024 unlonely.club. Made with <Heart className="w-4 h-4 inline text-white" /> for the Finnish expat community.
+            © 2025 unlonely.club. Made with <Heart className="w-4 h-4 inline text-white" /> for the Finnish expat community.
           </p>
         </div>
       </div>
