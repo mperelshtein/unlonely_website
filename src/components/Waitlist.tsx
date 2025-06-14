@@ -21,7 +21,7 @@ const Waitlist = () => {
             <p className="text-base text-foreground mb-6">Join thousands of immigrants who are transforming their Finland experience from isolation to integration</p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button onClick={handleJoinWaitlist} className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 h-12 rounded-xl">Join the Waitlist</Button>
+              <Button onClick={handleJoinWaitlist} className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 h-12 rounded-xl">Join the Waitlist (Telegram)</Button>
               
               <Button onClick={handleFeedback} variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 h-12 rounded-xl">
                 Share Your Story
