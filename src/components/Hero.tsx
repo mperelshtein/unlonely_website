@@ -10,48 +10,56 @@ const Hero = () => {
 
   return (
     <section className="relative overflow-hidden gradient-hero">
-      <div className="container mx-auto px-4 py-16 lg:py-24">
+      <div className="container mx-auto px-4 py-12 lg:py-16">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
+          <div className="flex justify-center items-center mb-6">
+            <img 
+              src="/lovable-uploads/b2e5218d-c6b9-4001-a854-11b708779dd5.png" 
+              alt="unlonely.club logo" 
+              className="h-16 w-auto"
+            />
+          </div>
+          
           <div className="flex justify-center items-center gap-2 mb-4">
-            <MapPin className="w-5 h-5 text-foreground" />
-            <span className="text-sm font-medium text-foreground tracking-wide uppercase">
+            <MapPin className="w-5 h-5 text-black" />
+            <span className="text-sm font-medium text-black tracking-wide uppercase">
               Starting life in Finland
             </span>
           </div>
           
-          <h1 className="text-4xl lg:text-6xl font-bold mb-4 leading-tight text-foreground">
+          <h1 className="text-4xl lg:text-6xl font-bold mb-4 leading-tight text-black">
             Find Your Tribe in Finland
           </h1>
           
-          <p className="text-xl lg:text-2xl text-foreground mb-6 leading-relaxed">
+          <p className="text-xl lg:text-2xl text-black mb-6 leading-relaxed">
             We handle the social, practical, and emotional chaos of starting a life in Finland — so you don't have to
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm px-4 py-2 rounded-full border">
-              <Heart className="w-4 h-4 text-foreground" />
-              <span className="text-sm font-medium text-foreground">Emotional Safety</span>
+              <Heart className="w-4 h-4 text-black" />
+              <span className="text-sm font-medium text-black">Emotional Safety</span>
             </div>
             <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm px-4 py-2 rounded-full border">
-              <Users className="w-4 h-4 text-foreground" />
-              <span className="text-sm font-medium text-foreground">Real Community</span>
+              <Users className="w-4 h-4 text-black" />
+              <span className="text-sm font-medium text-black">Real Community</span>
             </div>
             <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm px-4 py-2 rounded-full border">
-              <MapPin className="w-4 h-4 text-foreground" />
-              <span className="text-sm font-medium text-foreground">Integration Support</span>
+              <MapPin className="w-4 h-4 text-black" />
+              <span className="text-sm font-medium text-black">Integration Support</span>
             </div>
           </div>
           
           <Button 
             onClick={scrollToWaitlist}
             size="lg" 
-            className="bg-foreground hover:bg-foreground/90 text-background font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl"
           >
             Join the Waitlist
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
           
-          <p className="text-sm text-foreground mt-4">
+          <p className="text-sm text-black mt-4">
             Be the first to know when we launch • No spam, ever
           </p>
         </div>
@@ -59,9 +67,9 @@ const Hero = () => {
       
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full opacity-50 pointer-events-none">
-        <div className="absolute top-20 left-10 w-20 h-20 bg-foreground/10 rounded-full blur-xl"></div>
-        <div className="absolute top-40 right-20 w-32 h-32 bg-foreground/10 rounded-full blur-2xl"></div>
-        <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-foreground/10 rounded-full blur-xl"></div>
+        <div className="absolute top-20 left-10 w-20 h-20 bg-coral-accent/20 rounded-full blur-xl"></div>
+        <div className="absolute top-40 right-20 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-coral-accent/20 rounded-full blur-xl"></div>
       </div>
     </section>
   );

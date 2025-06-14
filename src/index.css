@@ -8,24 +8,24 @@
 @layer base {
   :root {
     --background: 255 255 255;
-    --foreground: 0 0 0;
+    --foreground: 52 73 94;
 
     --card: 255 255 255;
-    --card-foreground: 0 0 0;
+    --card-foreground: 52 73 94;
 
     --popover: 255 255 255;
-    --popover-foreground: 0 0 0;
+    --popover-foreground: 52 73 94;
 
-    --primary: 38 50 66;
+    --primary: 52 73 94;
     --primary-foreground: 255 255 255;
 
     --secondary: 241 245 249;
-    --secondary-foreground: 0 0 0;
+    --secondary-foreground: 52 73 94;
 
     --muted: 248 250 252;
     --muted-foreground: 100 116 139;
 
-    --accent: 38 50 66;
+    --accent: 255 127 102;
     --accent-foreground: 255 255 255;
 
     --destructive: 239 68 68;
@@ -33,51 +33,53 @@
 
     --border: 226 232 240;
     --input: 226 232 240;
-    --ring: 38 50 66;
+    --ring: 52 73 94;
 
     --radius: 0.75rem;
 
-    --warmth: 38 50 66;
+    --warmth: 255 127 102;
     --warmth-foreground: 255 255 255;
     
-    --nordic-blue: 38 50 66;
+    --nordic-blue: 52 73 94;
     --nordic-light: 246 243 239;
+    --coral-accent: 255 127 102;
   }
 
   .dark {
-    --background: 38 50 66;
+    --background: 52 73 94;
     --foreground: 255 255 255;
 
-    --card: 30 41 59;
+    --card: 44 62 80;
     --card-foreground: 255 255 255;
 
-    --popover: 30 41 59;
+    --popover: 44 62 80;
     --popover-foreground: 255 255 255;
 
     --primary: 255 255 255;
-    --primary-foreground: 38 50 66;
+    --primary-foreground: 52 73 94;
 
-    --secondary: 51 65 85;
+    --secondary: 44 62 80;
     --secondary-foreground: 226 232 240;
 
-    --muted: 51 65 85;
+    --muted: 44 62 80;
     --muted-foreground: 148 163 184;
 
-    --accent: 255 255 255;
-    --accent-foreground: 38 50 66;
+    --accent: 255 127 102;
+    --accent-foreground: 255 255 255;
 
     --destructive: 220 38 38;
     --destructive-foreground: 248 250 252;
 
-    --border: 51 65 85;
-    --input: 51 65 85;
+    --border: 44 62 80;
+    --input: 44 62 80;
     --ring: 255 255 255;
 
-    --warmth: 255 255 255;
-    --warmth-foreground: 38 50 66;
+    --warmth: 255 127 102;
+    --warmth-foreground: 255 255 255;
     
     --nordic-blue: 255 255 255;
-    --nordic-light: 30 41 59;
+    --nordic-light: 44 62 80;
+    --coral-accent: 255 127 102;
   }
 }
 
@@ -97,5 +99,9 @@
 }
 
 .gradient-warmth {
-  background: linear-gradient(135deg, hsl(var(--warmth)) 0%, hsl(var(--accent)) 100%);
+  background: linear-gradient(135deg, hsl(var(--coral-accent)) 0%, hsl(var(--accent)) 100%);
+}
+
+.text-black {
+  color: #000000 !important;
 }

@@ -12,22 +12,22 @@ const Waitlist = () => {
   };
 
   return (
-    <section id="waitlist" className="py-12 gradient-hero">
+    <section id="waitlist" className="py-8 gradient-hero">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
           <div className="bg-card rounded-3xl p-8 border shadow-xl">
-            <Users className="w-12 h-12 text-foreground mx-auto mb-4" />
-            <h3 className="text-2xl font-bold mb-3 text-foreground">
+            <Users className="w-12 h-12 text-black mx-auto mb-4" />
+            <h3 className="text-2xl font-bold mb-3 text-black">
               Ready to Find Your Tribe?
             </h3>
-            <p className="text-base text-foreground mb-6">
+            <p className="text-base text-black mb-6">
               Join our waitlist to be the first to know when we launch.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 onClick={handleJoinWaitlist}
-                className="bg-foreground hover:bg-foreground/90 text-background font-semibold px-8 h-12 rounded-xl"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 h-12 rounded-xl"
               >
                 Join Waitlist
               </Button>
@@ -35,13 +35,13 @@ const Waitlist = () => {
               <Button 
                 onClick={handleFeedback}
                 variant="outline"
-                className="border-foreground text-foreground hover:bg-foreground hover:text-background font-semibold px-8 h-12 rounded-xl"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 h-12 rounded-xl"
               >
                 Give your feedback
               </Button>
             </div>
 
-            <p className="text-xs text-foreground mt-4">
+            <p className="text-xs text-black mt-4">
               We respect your privacy. No spam, ever.
             </p>
           </div>
