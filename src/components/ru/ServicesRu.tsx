@@ -1,4 +1,3 @@
-
 import { Heart, Users, Home } from "lucide-react";
 
 const ServicesRu = () => {
@@ -7,7 +6,7 @@ const ServicesRu = () => {
       icon: Heart,
       title: "Сеть социальной поддержки",
       subtitle: "Строите уверенность через настоящие связи",
-      features: ["Племена взаимной поддержки", "Кураторские знакомства один на один с другими иммигрантами", "Система подбора для встреч с людьми с вашими интересами"]
+      features: ["Круги взаимной поддержки", "Кураторские знакомства один на один с другими иммигрантами", "Система подбора для встреч с людьми с вашими интересами"]
     },
     {
       icon: Users,
@@ -28,7 +27,7 @@ const ServicesRu = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">
-            Ваше путешествие к принадлежности
+            Ваш путь к интеграции
           </h2>
           <p className="text-lg text-foreground">От ощущения себя чужаком до того, чтобы называть Финляндию домом. Мы поддерживаем каждый шаг вашей интеграции.</p>
         </div>

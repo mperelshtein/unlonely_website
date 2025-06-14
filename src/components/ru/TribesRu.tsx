@@ -1,4 +1,3 @@
-
 import { TrendingUp, Zap, Heart } from "lucide-react";
 import {
   Carousel,
@@ -16,7 +15,7 @@ const TribesRu = () => {
       icon: TrendingUp,
       color: "bg-emerald-100 border-emerald-200",
       iconColor: "text-emerald-600",
-      testimonial: "Я присоединился к племени роста и получил теплое знакомство в Supercell!"
+      testimonial: "Я присоединился к growth tribe и получил теплое знакомство в Supercell!"
     },
     {
       name: "tribe.energy",
@@ -24,7 +23,7 @@ const TribesRu = () => {
       icon: Zap,
       color: "bg-orange-100 border-orange-200",
       iconColor: "text-orange-600",
-      testimonial: "Я присоединился к племени энергии и наконец записался на уроки тенниса!"
+      testimonial: "Я присоединился к energy tribe и наконец записался на уроки тенниса!"
     },
     {
       name: "tribe.support",
@@ -32,7 +31,7 @@ const TribesRu = () => {
       icon: Heart,
       color: "bg-rose-100 border-rose-200",
       iconColor: "text-rose-600",
-      testimonial: "Я присоединился к племени поддержки и нашел идеальный детский сад!"
+      testimonial: "Я присоединился к support tribe и нашел идеальный детский сад!"
     }
   ];
 
